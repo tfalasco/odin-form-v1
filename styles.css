@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'lacquerregular';
+    src: url('fonts/lacquer-regular-webfont.woff2') format('woff2'),
+         url('fonts/lacquer-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+    font-size: xx-large;
+    font-family: 'lacquerregular';
+}
