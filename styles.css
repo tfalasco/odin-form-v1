@@ -7,7 +7,126 @@
 
 }
 
-p {
-    font-size: xx-large;
-    font-family: 'lacquerregular';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height:100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.outer-container {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0;
+}
+
+.image-container {
+    vertical-align: top;
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    position: relative;
+}
+
+.form-container {
+    vertical-align: top;
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 1rem;
+}
+
+.image-container .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-container {
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text {
+    font-family: lacquerregular, sans-serif;
+    display: inline;
+    vertical-align: top;
+    color: #ddd;
+    font-size: 2rem;
+    margin-left: 1rem;
+    padding: 0px;
+    border: 0px;
+} 
+
+.card-icon {
+    display: inline;
+    height: 3rem;
+    object-fit: cover;
+}
+
+.form-container form {
+    height: 50%;
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+form > p {
+    margin: 0;
+}
+
+.form-description {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 6%;
+}
+
+.column {
+    flex: 1;
+    width: 47%;
+
+}
+
+.column input {
+    max-width: 100%;
+}
+
+.left-column {
+    background-color: blueviolet;
+}
+
+.right-column {
+    background-color: aqua;
 }

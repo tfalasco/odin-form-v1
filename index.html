@@ -7,6 +7,44 @@
     <title>Sign Up!</title>
 </head>
 <body>
-    <p>test</p>
+    
+    <div class="outer-container">
+        <div class="image-container" style="background-color: blue;">
+            <img
+                class="background-image"
+                src="images/chipmunk.JPG"
+                alt="a chipmunk paused in its scampering"
+            />
+            <div class="card-container">
+                <img 
+                    class="card-icon"
+                    src="images/odin-both-eyes.png"
+                    alt="Icon of a Norse god"
+                />
+                <div class="card-text">Sign up!</div>
+            </div>
+        </div>
+        <div class="form-container" style="background-color: red;">
+            <div class="form-description">Sign up for this incredible service.  You won't even <em>believe</em> how great it is.  People say it is the <em>best</em> service.</div>
+            <form>
+                <p>Let's do this!</p>
+                <div class="columns">
+                    <div class="column left-column">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name">
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" name="mail">
+                    </div>
+                    <div class="column right-column">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name">
+                        <label for="phone">Phone number</label>
+                        <input type="phone" id="phone" name="phone">
+                    </div>
+                </div>
+                <button type="submit">Sign Up!</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
