@@ -39,13 +39,15 @@ body {
 
 .form-container {
     vertical-align: top;
-    display: inline-block;
     width: 60%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     border: 0px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .image-container .background-image {
@@ -102,7 +104,6 @@ form > p {
 
 .form-description,
 .login-section {
-    font-size: 1rem;
     padding: 1rem;
     min-height: 20%;
 }
