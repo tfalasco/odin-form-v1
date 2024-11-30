@@ -16,6 +16,7 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .outer-container {
@@ -48,6 +49,7 @@ body {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #f9f9f9;
 }
 
 .image-container .background-image {
@@ -89,13 +91,14 @@ body {
 .form-container form {
     height: 50%;
     width: 100%;
-    background-color: #ddd;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
     padding: 20px;
+    border-bottom: 1px solid #bbb;
+    background-color: #f5f5f5;
 }
 
 form > p {
@@ -129,14 +132,34 @@ form > p {
     max-width: 100%;
 }
 
-.left-column {
-    background-color: blueviolet;
-}
-
-.right-column {
-    background-color: aqua;
-}
-
 label {
     display: block;
+}
+
+input,
+button {
+    font-size: 1.2rem;
+    border-radius: 6px;
+}
+
+input {
+    padding: 3px;
+    border: 1px solid #bbb;
+}
+
+button {
+    padding: 5px 1rem;
+    background-color: rgb(105, 82, 54);
+    color:#f9f9f9;
+    border: none;
+}
+
+input:user-invalid {
+    box-shadow: 0px 0px 5px red;
+    border: 1px solid red;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 2px blue;
 }
